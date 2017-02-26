@@ -17,4 +17,8 @@ export class CardComponent implements OnInit {
   ngOnInit() {
   }
 
+  statusToggle(){
+    this.task.completed = !this.task.completed;
+  }
+
 }
