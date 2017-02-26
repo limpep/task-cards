@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Task} from "./model/task";
 
 @Component({
   moduleId: module.id,
@@ -7,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  title = 'tc works!';
+  private tasks = [
+    new Task(
+      "Buy a monkey",
+      false
+    ),
+    new Task(
+      "Walk the turtle",
+      false
+    )
+  ]
 }
