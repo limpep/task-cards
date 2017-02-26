@@ -8,10 +8,7 @@ import {Task} from "./model/task";
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  private tasks = [
-    new Task("something",false)
-
-  ]
+  private tasks: Task[] = [];
 
   private currentTask = new Task(null, false);
 
